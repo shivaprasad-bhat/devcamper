@@ -23,7 +23,9 @@ app.use(errorHandler);
 
 const server = app.listen(
     PORT,
-    console.log(`Server running on ${process.env.NODE_ENV} mode`.green.bold)
+    console.log(
+        `Server running on ${process.env.NODE_ENV} mode`.green.bold.inverse
+    )
 );
 
 //Handle unhandled promise rejection
